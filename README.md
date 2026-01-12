@@ -22,12 +22,12 @@ You can install this mod through the built-in modloader of Factorio under the na
 
 ```
 cd <path to factorio mods>
-git clone https://github.com/Diordany/factorio-smart-belt-immunity.git smart-belt-immunity-diordany_0.1.0
+git clone https://github.com/Diordany/factorio-smart-belt-immunity.git smart-belt-immunity-diordany_0.1.1
 ```
 
 ## Installation from ZIP
 
-Just save the .zip file to the mod directory of Factorio as `smart-belt-immunity-diordany_0.2.0.zip` (or leave the name as it is if downloading from the releases page).
+Just save the .zip file to the mod directory of Factorio as `smart-belt-immunity-diordany_0.1.1.zip` (or leave the name as it is if downloading from the releases page).
 
 # Usage
 
