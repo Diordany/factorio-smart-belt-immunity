@@ -5,5 +5,6 @@
   "author": "tjson; Diordany van Hemert",
   "homepage": "https://github.com/Diordany/factorio-smart-belt-immunity",
   "description": "This is a continuation of tjson's mod. This mod modifies the Belt Immunity Equipment. It turns off the immunity to belts when you're moving in the same direction as the belt is.",
-  "factorio_version": "2.0"
+  "factorio_version": "2.0",
+  "dependencies": ["! smart-belt-immunity", "! smarter-belt-immunity"]
 }
