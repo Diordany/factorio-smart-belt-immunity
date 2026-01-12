@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2026-01-13
+  Compatibility:
+    - Added other versions of this mod to the conflict list. They should not be loaded simultaneously.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2026-01-12
   Bugfixes:
