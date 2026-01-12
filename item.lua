@@ -1,6 +1,7 @@
 --[[
 Smart Belt Immunity
 Copyright (C) 2022 Jason Fortit
+Copyright (C) 2026 Diordany van Hemert
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -25,7 +26,7 @@ smartBeltImmunityItem.icons = {
         tint = {r=1,g=0.5,b=1,a=1}
     },
 }
-smartBeltImmunityItem.placed_as_equipment_result = "smart-belt-immunity-equipment"
+smartBeltImmunityItem.place_as_equipment_result = "smart-belt-immunity-equipment"
 
 -- Smart Belt Immunity Equipment [Equipment]
 
@@ -49,10 +50,13 @@ smartBeltImmunityItem.placed_as_equipment_result = "smart-belt-immunity-equipmen
 
 -- Smart Belt Immunity Equipment [Recipe]
 
-local smartBeltImmunityRecipe = table.deepcopy(data.raw["recipe"]["effectivity-module"])
+local smartBeltImmunityRecipe = table.deepcopy(data.raw["recipe"]["efficiency-module"])
 smartBeltImmunityRecipe.name = "smart-belt-immunity-equipment"
-smartBeltImmunityRecipe.ingredients = {{"belt-immunity-equipment",1},{"effectivity-module",1}}
-smartBeltImmunityRecipe.result = "smart-belt-immunity-equipment"
+smartBeltImmunityRecipe.ingredients = {
+  {type="item", name="belt-immunity-equipment", amount=1},
+  {type="item", name="efficiency-module", amount=1}
+}
+smartBeltImmunityRecipe.results = {{type="item", name="smart-belt-immunity-equipment", amount=1}}
 
 -- Extending the data.raw table
 data:extend{smartBeltImmunityItem, smartBeltImmunity, smartBeltImmunityDisabled, smartBeltImmunityRecipe}
