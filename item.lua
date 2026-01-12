@@ -33,12 +33,7 @@ smartBeltImmunityItem.place_as_equipment_result = "smart-belt-immunity-equipment
     -- ENABLED
     local smartBeltImmunity = table.deepcopy(data.raw["belt-immunity-equipment"]["belt-immunity-equipment"])
     smartBeltImmunity.name = "smart-belt-immunity-equipment"
-    smartBeltImmunity.sprite = {
-        filename = "__base__/graphics/equipment/belt-immunity-equipment.png",
-        width = 32,
-        height = 32,
-        tint = {r=1,g=0.5,b=1,a=1}
-    }
+    smartBeltImmunity.sprite.tint = {r=1,g=0.5,b=1,a=1}
 
     -- Seems a bit hacky; gotta review this further later.
     -- DISABLED
