@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2026-01-12
+  Bugfixes:
+    - Fixed mod not working for splitter.
+    - Fixed equipment quality lost while switching modes.
+  Modding:
+    - IDE files from previous author have been removed.
+  Info:
+    - This is a continuation of tjson's mod.
+    - Added the missing license information.
+    - The changelog of tjson's mod have been archived.
+    - Added a readme page.
+  Compatibility:
+    - Ported to Factorio 2.0.
