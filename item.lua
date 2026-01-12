@@ -40,6 +40,7 @@ smartBeltImmunityItem.place_as_equipment_result = "smart-belt-immunity-equipment
         tint = {r=1,g=0.5,b=1,a=1}
     }
 
+    -- Seems a bit hacky; gotta review this further later.
     -- DISABLED
     local smartBeltImmunityDisabled = table.deepcopy(smartBeltImmunity)
     smartBeltImmunityDisabled.name = "smart-belt-immunity-equipment-DISABLED"
