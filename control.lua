@@ -19,11 +19,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 function disable_belt_immunity(player, grid)
     equipmentPosition = nil
+    local quality = nil
+
     for _, equipment in pairs(grid.equipment) do
         if equipment.name == "smart-belt-immunity-equipment" then
             equipmentPosition = equipment.position
+            quality = equipment.quality.name
             grid.take({position=equipmentPosition, by_player=player})
-            grid.put({name="smart-belt-immunity-equipment-DISABLED", position=equipmentPosition, by_player=player})
+            grid.put({name="smart-belt-immunity-equipment-DISABLED", position=equipmentPosition, by_player=player, quality=quality})
             break
         end
     end
@@ -31,11 +34,14 @@ end
 
 function enable_belt_immunity(player, grid)
     equipmentPosition = nil
+    local quality = nil
+
     for _, equipment in pairs(grid.equipment) do
         if equipment.name == "smart-belt-immunity-equipment-DISABLED" then
             equipmentPosition = equipment.position
+            quality = equipment.quality.name
             grid.take({position=equipmentPosition, by_player=player})
-            grid.put({name="smart-belt-immunity-equipment", position=equipmentPosition, by_player=player})
+            grid.put({name="smart-belt-immunity-equipment", position=equipmentPosition, by_player=player, quality=quality})
             break
         end
     end
