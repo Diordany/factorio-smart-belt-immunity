@@ -23,7 +23,7 @@ smartBeltImmunityItem.name = "smart-belt-immunity-equipment"
 smartBeltImmunityItem.icons = {
     {
         icon = smartBeltImmunityItem.icon,
-        tint = {r=1,g=0.5,b=1,a=1}
+        tint = {r=0.24,g=0.71,b=0.84,a=1}
     },
 }
 smartBeltImmunityItem.place_as_equipment_result = "smart-belt-immunity-equipment"
@@ -33,7 +33,7 @@ smartBeltImmunityItem.place_as_equipment_result = "smart-belt-immunity-equipment
     -- ENABLED
     local smartBeltImmunity = table.deepcopy(data.raw["belt-immunity-equipment"]["belt-immunity-equipment"])
     smartBeltImmunity.name = "smart-belt-immunity-equipment"
-    smartBeltImmunity.sprite.tint = {r=1,g=0.5,b=1,a=1}
+    smartBeltImmunity.sprite.tint = {r=0.24,g=0.71,b=0.84,a=1}
 
     -- Seems a bit hacky; gotta review this further later.
     -- DISABLED
@@ -41,7 +41,7 @@ smartBeltImmunityItem.place_as_equipment_result = "smart-belt-immunity-equipment
     smartBeltImmunityDisabled.name = "smart-belt-immunity-equipment-DISABLED"
     smartBeltImmunityDisabled.type = "movement-bonus-equipment"
     smartBeltImmunityDisabled.movement_bonus = 0
-    smartBeltImmunityDisabled.background_color = {r=1,g=0,b=0,a=0.3}
+    smartBeltImmunityDisabled.background_color = {r=0.24,g=0.71,b=0.84,a=0.3}
     smartBeltImmunityDisabled.take_result = "smart-belt-immunity-equipment"
 
 -- Smart Belt Immunity Equipment [Recipe]
